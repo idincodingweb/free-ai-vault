@@ -1,5 +1,9 @@
 import ToolCard from "./ToolCard";
 import sunoHero from "@/assets/suno-hero.jpg";
+import midjourneyHero from "@/assets/midjourney-hero.jpg";
+import runwayHero from "@/assets/runway-hero.jpg";
+import chatgptHero from "@/assets/chatgpt-hero.jpg";
+import fluxHero from "@/assets/flux-hero.jpg";
 
 const FeaturedTools = () => {
   const tools = [
@@ -12,6 +16,46 @@ const FeaturedTools = () => {
       featured: true,
       rating: 4.9,
       users: "50K+"
+    },
+    {
+      title: "Midjourney Pro",
+      description: "Generate stunning, high-quality images with Midjourney AI. Create professional artwork, concept designs, and digital art with advanced AI models. Free access to premium features.",
+      category: "Image Generation",
+      image: midjourneyHero,
+      link: "https://kie.ai/id/playground/mj",
+      featured: true,
+      rating: 4.8,
+      users: "100K+"
+    },
+    {
+      title: "Runway Pro",
+      description: "Revolutionary AI video generation platform. Create cinematic videos, edit footage, and generate motion graphics with cutting-edge AI technology. Professional video creation made simple.",
+      category: "Video Generation",
+      image: runwayHero,
+      link: "https://kie.ai/id/playground/runway",
+      featured: true,
+      rating: 4.7,
+      users: "75K+"
+    },
+    {
+      title: "ChatGPT 4.0 Image Pro",
+      description: "Advanced image generation powered by ChatGPT 4.0. Create detailed, contextual images through conversational AI. Perfect for creative projects and professional design work.",
+      category: "Image Generation",
+      image: chatgptHero,
+      link: "https://kie.ai/id/playground/4o-image",
+      featured: false,
+      rating: 4.6,
+      users: "80K+"
+    },
+    {
+      title: "Flux Pro",
+      description: "High-performance AI image generator with exceptional quality and speed. Create photorealistic images, artistic illustrations, and professional graphics with state-of-the-art Flux models.",
+      category: "Image Generation",
+      image: fluxHero,
+      link: "https://kie.ai/id/playground/flux",
+      featured: false,
+      rating: 4.8,
+      users: "60K+"
     }
   ];
 
@@ -40,23 +84,6 @@ const FeaturedTools = () => {
           {tools.map((tool, index) => (
             <ToolCard key={index} {...tool} />
           ))}
-          
-          {/* Placeholder cards for coming soon */}
-          <div className="bg-card/30 backdrop-blur-sm border-2 border-dashed border-tech-primary/30 rounded-lg p-8 flex flex-col items-center justify-center text-center space-y-4 min-h-[400px]">
-            <div className="w-16 h-16 bg-tech-primary/20 rounded-full flex items-center justify-center">
-              <span className="text-2xl">🎨</span>
-            </div>
-            <h3 className="text-lg font-semibold text-muted-foreground">Image Generation</h3>
-            <p className="text-sm text-muted-foreground">Coming Soon</p>
-          </div>
-
-          <div className="bg-card/30 backdrop-blur-sm border-2 border-dashed border-tech-primary/30 rounded-lg p-8 flex flex-col items-center justify-center text-center space-y-4 min-h-[400px]">
-            <div className="w-16 h-16 bg-tech-primary/20 rounded-full flex items-center justify-center">
-              <span className="text-2xl">💬</span>
-            </div>
-            <h3 className="text-lg font-semibold text-muted-foreground">Text Generation</h3>
-            <p className="text-sm text-muted-foreground">Coming Soon</p>
-          </div>
         </div>
       </div>
     </section>

@@ -19,7 +19,7 @@ const Navigation = () => {
             <a href="#tools" className="text-foreground/80 hover:text-foreground transition-colors">
               Tools
             </a>
-            <a href="#about" className="text-foreground/80 hover:text-foreground transition-colors">
+            <a href="/about" className="text-foreground/80 hover:text-foreground transition-colors">
               About
             </a>
             <a href="#submit" className="text-foreground/80 hover:text-foreground transition-colors">
